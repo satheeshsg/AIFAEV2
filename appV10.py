@@ -26,6 +26,7 @@ cloudVectorIndex = 'infidemo2'
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 os.environ["PINECONE_API_KEY"] = st.secrets["PINECONE_API_KEY"]
+os.environ["PINECONE_ENVIRONMENT"] = st.secrets["PINECONE_ENVIRONMENT"]
 
 #openai_api_key = os.getenv("OPENAI_API_KEY")
 #pinecone_api_key = os.getenv("PINECONE_API_KEY")
