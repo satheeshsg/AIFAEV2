@@ -24,11 +24,11 @@ INFINEON_LOGO_PATH = 'https://i.ibb.co/jznsjfT/pngwing-com.png'
 cloudVectorIndex = 'infidemo2'
 
 
-#os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-#os.environ["PINECONE_API_KEY"] = st.secrets["PINECONE_API_KEY"]
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+os.environ["PINECONE_API_KEY"] = st.secrets["PINECONE_API_KEY"]
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
+#openai_api_key = os.getenv("OPENAI_API_KEY")
+#pinecone_api_key = os.getenv("PINECONE_API_KEY")
 
 def get_pdf_text(pdf_docs):
     return "".join([page.extract_text() for pdf in pdf_docs for page in PdfReader(pdf).pages])
